@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Efecto para el botón de editar foto */
+.qr-code {
+  transition: all 0.3s ease;
+}
+.qr-code:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-pop-in {
+  animation: pop-in 0.2s ease-out forwards;
+}
+
+.toggle-switch {
+  transition: all 0.3s ease-in-out;
+}
